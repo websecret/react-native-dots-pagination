@@ -1,9 +1,45 @@
 {
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-native": "^0.61.5"
+  "name": "react-native-dots-paginate",
+  "version": "0.0.1",
+  "description": "Dots Pagination component",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "react-native": "lib/module/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it",
+    "prepare": "bob build"
+  },
+  "keywords": [
+    "react-native",
+    "pagination",
+    "dots"
+  ],
+  "files": [
+    "src",
+    "lib",
+    "README.md"
+  ],
+  "author": "Web Secret",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websecret/react-native-dots-pagination.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "devDependencies": {
-    "@react-native-community/bob": "^0.8.0"
+    "@react-native-community/bob": "^0.8.0",
+    "release-it": "^12.4.3"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module"
+    ]
   }
 }
